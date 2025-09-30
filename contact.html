@@ -1,0 +1,62 @@
+<html>
+ <head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="style1.css">
+ </head>
+<body>
+  <header>
+      <h5>.</h5>
+  </header>
+<center> <h1><font color="pink"> ♡✧˚Love : Amouré♡✧˚ </h1>
+<nav>
+ <ul>
+     <li><a href="#"target="_blank">Home</a></li>
+     <li><a href="index.html">profile</a></li>
+   <li>
+     <a href="#">Produk</a>
+   <ul>
+     <li><a href="hairtie.html" style="color:HotPink;">hairtie</a></li> 
+     <li><a href="bow.html" style="color:HotPink;">bow</a></li> 
+     <li><a href="hairclip.html" style="color:HotPink;">hair clip</a></li> 
+     <li><a href="keychain.html" style="color:HotPink;">keychain</a></li>
+
+  </ul>
+  </li>
+     <li><a href="off.html">5% off</a></li> 
+     <li><a href="new.html">new arrival</a></li> 
+     <li><a href="best.html">best seller</a></li> 
+     <li><a href="contact.html">contact</a></li>
+</nav>
+<hr><div class="filter-box">
+    <label for="category">Shop Categories:</label>
+    <select id="category">
+      <option value="">Select Category Here</option>
+      <option value="fashion">Fashion</option>
+      <option value="food">Food</option>
+      <option value="electronics">Electronics</option>
+    </select>
+
+    <label for="floor">Select Floors:</label>
+    <select id="floor">
+      <option value="">Select Floor</option>
+      <option value="gf">Ground Floor</option>
+      <option value="1">1st Floor</option>
+      <option value="2">2nd Floor</option>
+    </select>
+
+    <label for="search">Search by Name:</label>
+    <input type="text" id="search" placeholder="Type shop name...">
+
+    <button onclick="resetFilter()">Reset Filter</button>
+  </div>
+
+  <script>
+    function resetFilter() {
+      document.getElementById('category').selectedIndex = 0;
+      document.getElementById('floor').selectedIndex = 0;
+      document.getElementById('search').value = '';
+    }
+  </script>
+</body>
+</html>
