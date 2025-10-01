@@ -29,19 +29,41 @@
      <li><a href="contact.html">Contact&Order</a></li>
 </nav>
 <hr><div class="filter-box">
-    <label for="category">Shop Categories:</label>
-    <select id="category">
-      <option value="">Select Category Here</option>
-      <option value="hairtie">hairtie</option>
-      <option value="bow">bow</option>
-      <option value="hair clip">hair clip</option>
-      <option value="keychain">keychain</option>
-    </select>
-
-    <label for="search">which one?:</label>
-    <input type="text" id="search" placeholder="which one you want..?">
-
-    <button onclick="resetFilter()">Reset Filter</button>
+    <table>
+      <tr>
+        <td><label for="category">Shop Categories:</label></td>
+        <td>
+          <select id="category">
+            <option value="">Select Category Here</option>
+            <option value="fashion">Fashion</option>
+            <option value="food">Food</option>
+            <option value="electronics">Electronics</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="floor">Select Floors:</label></td>
+        <td>
+          <select id="floor">
+            <option value="">Select Floor</option>
+            <option value="gf">Ground Floor</option>
+            <option value="1">1st Floor</option>
+            <option value="2">2nd Floor</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="search">Search by Name:</label></td>
+        <td>
+          <input type="text" id="search" placeholder="Type shop name...">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: right;">
+          <button onclick="resetFilter()">Reset Filter</button>
+        </td>
+      </tr>
+    </table>
   </div>
 
   <script>
@@ -53,5 +75,4 @@
   </script>
 </body>
 </html>
-
 
